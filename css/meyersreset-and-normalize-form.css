@@ -102,7 +102,7 @@ button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
-  appearance: button; /* Standardized instead of -webkit-appearance */
+  /* Removed `appearance: button;` as it's unsupported by the spec */
 }
 
 /**
@@ -180,7 +180,7 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 [type="number"] {
-  appearance: textfield; /* Standardized instead of -webkit-inner-spin-button */
+  appearance: textfield;
 }
 
 /**
@@ -192,19 +192,13 @@ textarea {
   outline-offset: -2px;
 }
 
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
- */
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  display: none; /* Instead of -webkit-appearance: none */
-}
+/* Removed `::-webkit-search-cancel-button` and `::-webkit-search-decoration` as they are non-standard */
 
 /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
+ * Correct the inability to style file upload button in iOS and Safari.
  */
-::-webkit-file-upload-button {
-  appearance: button;
-  font: inherit;
+@supports (-webkit-appearance: none) {
+  ::-webkit-file-upload-button {
+    font: inherit;
+  }
 }
