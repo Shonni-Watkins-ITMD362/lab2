@@ -1,44 +1,94 @@
+
 body {
   background-color: #74fc79;
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 h1 {
   color: #256673;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
+
 
 #form {
+  background-color: #a4fafc;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 500px;
+  border: 0.625rem solid #157F1F;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  max-height: 80vh; 
+}
+
+/* Input Fields */
+#input_email, 
+#input_phone_number, 
+#input_date_of_birth {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #157F1F;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Submit Button */
+#submit_button {
   text-align: center;
 }
 
-/* Media Query 1: Screens wider than 600px */
-@media (min-width: 600px) {
-  #form {
-    background-color: #a4fafc;
-    padding: 1.25rem;
-    margin: 1rem auto;
-    text-align: center;
-    border: 0.625rem solid #157F1F;
-    border-radius: 1rem;
-    width: 80%;
-    max-width: 90%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  }
+#submit_button input {
+  background-color: #157F1F;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 100%;
 }
 
-/* Media Query 2: Screens wider than 900px */
+#submit_button input:hover {
+  background-color: #0e5a17;
+}
+
+/* Desktop Layout - Sectioned Form */
 @media (min-width: 900px) {
   #form {
-    background-color: #a4fafc;
-    padding: 1.25rem;
-    margin: 1rem auto;
-    text-align: center;
-    border: 0.625rem solid #157F1F;
-    border-radius: 1rem;
-    width: 80%;
-    max-width: 90%;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    max-width: 800px;
+    padding: 2rem;
+    max-height: none; /
+  }
+
+
+  #submit_button {
+    grid-column: span 2;
   }
 }
