@@ -2,87 +2,43 @@ body {
   background-color: #74fc79;
 }
 
-
- h1 {
+h1 {
   color: #256673;
-   font-family: Verdana, Arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
   font-size: 1.25rem;
   text-align: center;
 }
 
 #form {
-   text-align: center;
+  text-align: center;
 }
-
-
 
 /* Media Query 1: Screens wider than 600px */
 @media (min-width: 600px) {
-   
-   #form {background-color: #a4fafc;
-  padding: 1.25rem;
-  margin: 1rem auto;
-  text-align: center;
-  border: 0.625rem solid #157F1F;
-  border-radius: 1rem;
-  width: 80%;
-  max-width: 90%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-   }
-
+  #form {
+    background-color: #a4fafc;
+    padding: 1.25rem;
+    margin: 1rem auto;
+    text-align: center;
+    border: 0.625rem solid #157F1F;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 90%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
 }
 
 /* Media Query 2: Screens wider than 900px */
 @media (min-width: 900px) {
-body {
-  background-color: #74fc79;
-}
-
-
- h1 {
-  color: #256673;
-   font-family: Verdana, Arial, sans-serif;
-  font-size: 1.25rem;
-  text-align: center;
-}
-
-#form {
-   text-align: center;
-}
-
-
-
-/* Media Query 1: Screens wider than 600px */
-@media (min-width: 600px) {
-   
-   #form {background-color: #a4fafc;
-  padding: 1.25rem;
-  margin: 1rem auto;
-  text-align: center;
-  border: 0.625rem solid #157F1F;
-  border-radius: 1rem;
-  width: 80%;
-  max-width: 90%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-   }
-
-}
-
-
-
-
-/* Media Query 2: Screens wider than 900px */
-@media (min-width: 900px) {
- #form {background-color: #a4fafc;
-  padding: 1.25rem;
-  margin: 1rem auto;
-  text-align: center;
-  border: 0.625rem solid #157F1F;
-  border-radius: 1rem;
-  width: 80%;
-  max-width: 90%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-   }
-
-
+  #form {
+    background-color: #a4fafc;
+    padding: 1.25rem;
+    margin: 1rem auto;
+    text-align: center;
+    border: 0.625rem solid #157F1F;
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 90%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
 }
