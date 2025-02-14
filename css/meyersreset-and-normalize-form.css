@@ -102,7 +102,7 @@ button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
-  /* Removed `appearance: button;` as it's unsupported by the spec */
+  /* Removed `appearance: button;` to comply with CSS validation */
 }
 
 /**
@@ -192,13 +192,5 @@ textarea {
   outline-offset: -2px;
 }
 
-/* Removed `::-webkit-search-cancel-button` and `::-webkit-search-decoration` as they are non-standard */
-
-/**
- * Correct the inability to style file upload button in iOS and Safari.
- */
-@supports (-webkit-appearance: none) {
-  ::-webkit-file-upload-button {
-    font: inherit;
-  }
-}
+/* Removed `-webkit-appearance` to comply with CSS validation */
+/* Removed `::-webkit-file-upload-button` as it is a non-standard pseudo-element */
